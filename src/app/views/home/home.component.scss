@@ -1,0 +1,32 @@
+.left-col {
+    background-image: url(website_author.PNG);
+    background-size: auto;
+    background-repeat: no-repeat;
+    box-shadow:  -30px 0px 50px 25px rgb(27,27,27) inset;
+}
+
+.cont .divider {
+    padding: 50px 0;
+}
+
+.right-col {
+    height: 100%;
+}
+
+.right-col p {
+    max-width: 750px;
+    
+}
+
+.upper-half {
+    display: flex;
+    flex-direction: column;
+    background-color: darkred;
+}
+
+.lower-half {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: green;
+}

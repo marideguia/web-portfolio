@@ -1,0 +1,28 @@
+// 0c0f0a
+// 9c0d38
+// ce5374
+// fcbcca
+// ffd2da
+
+.navbar {
+    display: flex;
+    align-items: right;
+    padding: 10px 0 0 0;    
+    height: 5vh;
+    background-color: #9c0d38;   
+    // box-shadow: 0px -10px 10px 5px  rgb(27,27,27) inset;
+}
+
+.navbar button {
+    background-color: transparent;
+    color: white;
+    // font-weight: bold;
+    // font-size: medium; 
+    font-size: 100%;
+    text-shadow: 2px 2px 4px #000000;       
+}
+
+.btn-cont {
+    margin-right:25px;
+    margin-left:auto;
+}
