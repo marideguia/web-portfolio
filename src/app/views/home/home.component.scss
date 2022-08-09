@@ -1,8 +1,15 @@
-.left-col {
+h1 {
+    font-size:55px;
+}
+.left-img {
+    // margin-left: 5%;
+    width: 90%;
+    height:100%;
     background-image: url(website_author.PNG);
-    background-size: auto;
-    background-repeat: no-repeat;
-    box-shadow:  -30px 0px 50px 25px rgb(27,27,27) inset;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    box-shadow: -50px -60px 60px 40px rgb(27,27,27) inset;
+   
 }
 
 .cont .divider {
@@ -11,22 +18,41 @@
 
 .right-col {
     height: 100%;
+    color: #ffffff;
+}
+
+.bio > h1 {
+    color: #f04a7c;
+}
+
+.pronouns {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f04a7c;
 }
 
 .right-col p {
-    max-width: 750px;
-    
+    max-width: 750px;    
 }
 
-.upper-half {
-    display: flex;
-    flex-direction: column;
-    background-color: darkred;
+.description {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: dotted;
+    border-width: 8px;
+    border-color:#f04a7c;
 }
 
-.lower-half {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    background-color: green;
+.poem-insert {
+    // font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+    border-top: dotted;
+    border-width: 8px;
+    border-color:#f04a7c;
+    padding-top: 40px;
 }
+
+// .bio {
+//     display: flex;
+//     flex-direction: column;
+//     // background-color: darkred;
+// }

@@ -19,6 +19,25 @@ li {
     text-decoration: underline;
 }
 
+table, th, td {
+    border: 1px solid #9c0d38;
+    border-collapse: collapse;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+th {
+     padding: 5px;
+}
+
+a {
+    // text-decoration: underline;
+    color: #fff;
+}
+
 a:hover {
     cursor: pointer;
 }
@@ -27,11 +46,12 @@ a:hover {
 .cont {
     display:flex;
     height: 100%;
+    width: 100%;
+    // background-color: green;
 }
 
 .left-col {
-    min-width: 600px;
-    height: 100%;
+   width: 50vw;
 }
 
 .divider {
@@ -40,34 +60,28 @@ a:hover {
     align-items: center;     
     width: 50px;
     height: 100%;
+    // background-color: aqua;
 }
 
 .arrow-up {
-    // width:0;
-    // height:0;
-    // border-left: 7px solid transparent;
-	// border-right: 7px solid transparent;
-	// border-bottom: 14px solid #9c0d38;
     height: 10px;
     width: 10px;
     background-color: #9c0d38;
     border-radius: 50%;
     display: inline-block;
+    
 
 }
 
 .divider .arrow-body {
     width: 1.5px;
-    height: 96vh;
+    min-height: 96vh;
+    height: 100%;
     background-color: #9c0d38;
+    
 }
 
 .arrow-down {
-    // width:0;
-    // height:0;
-    // border-left: 7px solid transparent;
-	// border-right: 7px solid transparent;
-	// border-top: 14px solid #9c0d38;
     height: 10px;
     width: 10px;
     background-color: #9c0d38;
