@@ -2,32 +2,16 @@ table {
     margin-top: 30px;
 }
 
-a {
-    font-style: italic;
-}
-.cont .divider {
-    padding: 50px 0;
-}
-
-.project {
+.right-col > * {
     width: 750px;
-    // padding-top: 30px;
     padding-bottom: 65px;
-    // border-top: dotted;
-    // border-width: 8px;
-    // border-color:#f04a7c;
+    border-bottom: dotted;
+    border-width: 8px;
+    border-color:#9c0d38;
 }
 
-.project h1 {
-    color: #f04a7c;
-}
-
-.left-col .poem-insert {
-    margin-left:auto;
-    margin-right: 0;
-    padding: 50px;
-    min-width: 250px;
-    text-align:right;
+.right-col > *:last-child {
+    border: none;
 }
 
 .gif {
@@ -35,13 +19,11 @@ a {
     height: 400px;
     background-image: url(ghostpost_edit.gif);
     background-size:cover;
-    margin-top: 30px;
-    
+    margin-top: 30px;    
 }
 
-.p-img {
-    
-    width: 750px;
+.p-img {    
+    width: 760px;
     height: 400px;
     background-image: url(spottid.png);
     background-size:cover;
