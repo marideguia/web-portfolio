@@ -1,34 +1,38 @@
-h1 {
-    font-size:55px;    
+.title h1 {
+    font-size: 70px;
 }
 
-// .left-img {
-//     transform-origin: left top;
-//     transition: all 0.3s ease-in-out;
-// }
-
-// .left-img:hover {
-//     transform: scale(1.1);
-// }
-
-.bio > * {    
-    transform-origin: left top;
-    transition: all 0.3s ease-in-out;
-    // border-bottom: dotted 8px #9c0d38;
-   
+.title {    
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    35deg,
+    #8377D1,
+    #92DCE5,
+    #F04A7C,
+    #F17300,
+    #F18F01
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+    display: inline-block;
 }
 
-.title {
-    color: #f04a7c;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
-
-.title:hover, .description:hover, .poem-insert:hover {
-    transform: scale(1.1);
-}
-
-
 
 .left-img {
+    transform-origin: left;
+    transition: all 0.3s ease-in-out;
+    opacity: .75;
     margin-top: 50px;
     width: 100%;
     height:100%;
@@ -39,11 +43,14 @@ h1 {
    
 }
 
+// .left-img:hover {
+//     transform: scale(1.05);
+// }
+
 .right-col {
     height: 100%;
     color: #ffffff;
 }
-
 
 .right-col p {
     max-width: 750px;    
@@ -61,9 +68,3 @@ h1 {
     margin-top: 40px;
     
 }
-
-// .bio {
-//     display: flex;
-//     flex-direction: column;
-//     // background-color: darkred;
-// }

@@ -1,8 +1,31 @@
-.right-col * {
-    color: #f04a7c
+
+.right-col h1 {    
+    // margin-top: -5px;
+    font-size: 70px;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+    35deg,
+    #8377D1,
+    #92DCE5,
+    #F04A7C,
+    #F17300,
+    #F18F01
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 6s linear infinite;
+    display: inline-block;
 }
 
-.resume:hover {
-    cursor: pointer;
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
+
 
