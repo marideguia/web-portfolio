@@ -1,21 +1,21 @@
 <div class="cont" [ngClass]="{'is-mobile': isMobilePortrait}">
-    <div class="left-col">
-        <p class="poem-insert">
+    <div class="left-col" [ngClass]="{'is-mobile': isMobilePortrait}">
+        <p class="poem-insert" [ngClass]="{'is-mobile': isMobilePortrait}">
             well met and parted<br>
-            should our paths diverge; grateful<br>
+            should our paths diverge, grateful<br>
             to know and be known<br>            
         </p>        
     </div>    
 
-    <div class="divider">
+    <div class="divider" [ngClass]="{'is-mobile': isMobilePortrait}">
         <div class="arrow-up"></div>
-        <div class="arrow-body"></div>
+        <div class="arrow-body" [ngClass]="{'is-mobile': isMobilePortrait}"></div>
         <div class="arrow-down"></div>
     </div> 
 
-    <div class="right-col">
+    <div class="right-col" [ngClass]="{'is-mobile': isMobilePortrait}">
         <h1>CONNECT</h1>    
-        <ul class="links">
+        <ul class="links" [ngClass]="{'is-mobile': isMobilePortrait}">
             <!-- <li class="resume" (click)="onResumeClick()">                
                 Resume
             </li> -->

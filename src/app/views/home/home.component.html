@@ -10,10 +10,10 @@
         <div class="arrow-down"></div>
     </div>
 
-    <div class="right-col">        
-        <div class="bio">
-            <div class="title">
-                <h1>MARICLAIRE DE GUIA</h1>
+    <div class="right-col" [ngClass]="{'is-mobile': isMobilePortrait}">        
+        <div class="bio" [ngClass]="{'is-mobile': isMobilePortrait}">
+            <div class="title" [ngClass]="{'is-mobile': isMobilePortrait}">
+                <h1>MARICLAIRE<br>DE GUIA</h1>
                 <p class="pronouns"><em>she/her/hers</em></p>
             </div>
             

@@ -2,6 +2,10 @@
     font-size: 70px;
 }
 
+.title.is-mobile h1{
+    font-size: 3.1em;
+}
+
 .title {    
     text-transform: uppercase;
     background-image: linear-gradient(
@@ -32,6 +36,10 @@
   }
 }
 
+.left-col.is-mobile {
+    height: 100vh;
+}
+
 .left-img {
     transform-origin: left;
     transition: all 0.3s ease-in-out;
@@ -47,7 +55,7 @@
 
 .left-img.is-mobile {
     // align-self: center;
-    margin-top: 50px;
+    // margin-top: 50px;
     width: 100%;
     height: 100%;
     background-image: url(../../../assets/website_author.PNG);
@@ -63,6 +71,11 @@
 .right-col {
     height: 100%;
     color: #ffffff;
+    
+}
+
+.right-col.is-mobile {
+    padding-bottom:10vh;
 }
 
 .right-col p {

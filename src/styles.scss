@@ -23,6 +23,7 @@ li {
 }
 
 table, th, td {
+    font-size: 12px;
     border: 1px solid #9c0d38;
     border-collapse: collapse;
 }
@@ -50,13 +51,21 @@ a:hover {
 .btn-cont {
     z-index: 2;
     display:flex;
-    justify-content: center;
-    width: 100%;
-    // padding-right: 40px;
+    justify-content: right;
+    width: 100vw;
+    padding-right: 2vw;
     position: fixed;
     top:0;
     right:0;
     background-color: rgba(27, 27, 27, 0.75);
+}
+
+.btn-cont.is-mobile {
+    justify-content: left;
+    width: 100vw;
+    left:0;
+    right: auto;
+    padding-left: 2vw;
 }
 
 .btn-cont button {
@@ -66,7 +75,7 @@ a:hover {
     font-size: 100%;
     text-shadow: 2px 2px 4px #000000; 
     transition: all .3s ease-in-out; 
-    padding: 10px 15px;     
+    padding: 8px 15px;     
 }
 
 .btn-cont button:hover{
@@ -98,10 +107,8 @@ a:hover {
 }
 
 .left-col.is-mobile {
-    display:flex;
     justify-content: center;
     min-width: 100vw;
-    height: 100vh;
     // background-color: green;    
 }
 
@@ -111,6 +118,12 @@ a:hover {
     padding: 50px;
     min-width: 200px;
     text-align:right;
+}
+
+.poem-insert.is-mobile {
+    text-align: left;
+    padding: 10vh 0 0 10vw;
+    margin: 0;
 }
 
 .divider {
@@ -145,7 +158,7 @@ a:hover {
 
 .arrow-body {
     width: 1.5px;
-    min-width: 90vh;
+    min-height: 90vh;
     height: 100%;
     background-color: #9c0d38;    
 }
@@ -153,7 +166,7 @@ a:hover {
 .arrow-body.is-mobile {
     width: 80%;
     min-width: 300px;
-    height: 1.5px;
+    min-height: 1.5px;
     background-color: #9c0d38;    
 }
 
@@ -171,6 +184,21 @@ a:hover {
     // background-color: blue;
 }
 
+.right-col.is-mobile{
+    // use padding: to overwrite above padding
+    padding: 0 0 0 10vw;
+    width: 80vw;
+}
+
+.right-col.is-mobile h1{
+    margin: 0;
+    margin-bottom: 5vh;    
+}
+
 .poem-insert {
     font-style: italic;
 }
+
+
+
+

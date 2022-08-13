@@ -1,6 +1,6 @@
 <div class="cont" [ngClass]="{'is-mobile': isMobilePortrait}">
-    <div class="left-col" >
-        <div class="poem-insert">
+    <div class="left-col" [ngClass]="{'is-mobile': isMobilePortrait}">
+        <div class="poem-insert" [ngClass]="{'is-mobile': isMobilePortrait}">
             a hail of tones<br>
             and a current of hues<br>
             we’ll look up toward the rainbow calm<br>
@@ -20,10 +20,10 @@
             <h1><a href="https://github.com/ShreyeshArangath/NeuralNetworkProject"
                 target="_blank"
                 rel="noreferrer noopener">Deep Learning: Vehicle Occupant Classification</a></h1>
-            <p>Our team conducted research to build and train a neural network model to classify images of vehicle
+            <p>Our research team built and trained a neural network model used to classify images of vehicle
                 occupants through interpretable and explainable deep-learning methods.</p>
             
-            <table>
+            <table [ngClass]="{'is-mobile': isMobilePortrait}">
                 <tr>
                     <th>Architecture</th>
                     <th>Optimizer</th>
@@ -87,9 +87,9 @@
             <h1><a href="https://github.com/marideguia/ghost-post"
                 target="_blank"
                 rel="noreferrer noopener">GhostPost</a></h1>
-            <p>GhostPost is a learning engagement tool built to allow audiences and lecturers 
-                to communicate anonymously with each other in real-time.</p>
-            
+            <p>GhostPost is a learning engagement tool currently under construction. Our goal is to provide a responsive
+                web application that allows audiences and lecturers 
+                to communicate anonymously with each other in real-time.</p>            
             <div class="gif"></div>
         </div>       
 
@@ -97,9 +97,8 @@
             <h1><a href="https://github.com/marideguia/HackWesTX"
                 target="_blank"
                 rel="noreferrer noopener">SpottID</a></h1>
-            <p>In this project, our team designed interfaces for a social media and e-commerce platform built to spotlight
-                works created by marginalized artists.</p>
-            
+            <p>In this project, our team designed interfaces for a social media and e-commerce platform
+            meant to spotlight works created by marginalized artists.</p>            
             <div class="p-img"></div>
         </div>        
     </div>     

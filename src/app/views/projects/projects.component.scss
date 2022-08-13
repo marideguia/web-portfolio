@@ -10,8 +10,23 @@ table {
     border-color:#9c0d38;
 }
 
-.right-col.is-mobile > *{
-    width: 350px;
+.right-col.is-mobile > * {
+    width: 100%;
+    padding-bottom: 65px;
+    border-bottom: dotted;
+    border-width: 8px;
+    border-color:#9c0d38;
+    margin-bottom: 5vh;
+}
+
+.right-col.is-mobile > * h1 {
+    margin-bottom: 2vh;
+}
+
+.right-col.is-mobile{
+    // use padding: to overwrite above padding
+    padding: 0 0 0 10vw;
+    width: 80vw;
 }
 
 .right-col > * {
