@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
+
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  isMobilePortrait=false;
+  
+  constructor(private responsive: BreakpointObserver) { 
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
+    this.responsive.observe(Breakpoints.HandsetPortrait)
+    .subscribe(result => {
+      this.isMobilePortrait=false;
+      if (result.matches) {
+        this.isMobilePortrait=true;
+      }
+    })
   }
 
 }

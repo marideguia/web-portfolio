@@ -1,5 +1,5 @@
-<div class="cont">
-    <div class="left-col">
+<div class="cont" [ngClass]="{'is-mobile': isMobilePortrait}">
+    <div class="left-col" >
         <div class="poem-insert">
             a hail of tones<br>
             and a current of hues<br>
@@ -9,13 +9,13 @@
         </div>
     </div>
 
-    <div class="divider">
+    <div class="divider" [ngClass]="{'is-mobile': isMobilePortrait}">
         <div class="arrow-up"></div>
-        <div class="arrow-body"></div>
+        <div class="arrow-body" [ngClass]="{'is-mobile': isMobilePortrait}"></div>
         <div class="arrow-down"></div>
     </div>
 
-    <div class="right-col">
+    <div class="right-col" [ngClass]="{'is-mobile': isMobilePortrait}">
         <div class="project">
             <h1><a href="https://github.com/ShreyeshArangath/NeuralNetworkProject"
                 target="_blank"

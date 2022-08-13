@@ -10,7 +10,10 @@
     #92DCE5,
     #F04A7C,
     #F17300,
-    #F18F01
+    #F18F01,
+    #F04A7C,
+    #92DCE5,
+    #8377D1,
     );
     background-size: auto auto;
     background-clip: border-box;
@@ -32,7 +35,6 @@
 .left-img {
     transform-origin: left;
     transition: all 0.3s ease-in-out;
-    opacity: .75;
     margin-top: 50px;
     width: 100%;
     height:100%;
@@ -41,6 +43,17 @@
     background-repeat: no-repeat; 
     box-shadow: -50px 0px 60px 40px rgb(27,27,27) inset;
    
+}
+
+.left-img.is-mobile {
+    // align-self: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../assets/website_author.PNG);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    box-shadow: -50px 0px 60px 40px rgb(27,27,27) inset;
 }
 
 // .left-img:hover {

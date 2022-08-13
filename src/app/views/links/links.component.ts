@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-links',
@@ -11,10 +11,20 @@ export class LinksComponent implements OnInit {
     window.open("/links/resume-2022-dg.pdf", '_blank')
   }
 
+  isMobilePortrait=false;
+  
+  constructor(private responsive: BreakpointObserver) { 
 
-  constructor() { }
+  }
 
   ngOnInit(): void {
+    this.responsive.observe(Breakpoints.HandsetPortrait)
+    .subscribe(result => {
+      this.isMobilePortrait=false;
+      if (result.matches) {
+        this.isMobilePortrait=true;
+      }
+    })
   }
 
 }

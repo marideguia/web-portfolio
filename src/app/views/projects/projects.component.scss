@@ -10,21 +10,35 @@ table {
     border-color:#9c0d38;
 }
 
+.right-col.is-mobile > *{
+    width: 350px;
+}
+
+.right-col > * {
+    width: 750px;
+    padding-bottom: 65px;
+    border-bottom: dotted;
+    border-width: 8px;
+    border-color:#9c0d38;
+}
+
 .right-col > *:last-child {
     border: none;
 }
 
 .gif {
-    width: 700px;
-    height: 400px;
+    aspect-ratio: 7/4;
+    // width: 700px;
+    // height: 400px;
     background-image: url(ghostpost_edit.gif);
     background-size:cover;
     margin-top: 30px;    
 }
 
-.p-img {    
-    width: 760px;
-    height: 400px;
+.p-img { 
+    aspect-ratio: 7.6/4;   
+    // width: 760px;
+    // height: 400px;
     background-image: url(spottid.png);
     background-size:cover;
     margin-top: 30px;

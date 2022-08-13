@@ -7,6 +7,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 18px;
+    // background-color:darkred;
 }
 
 ul {
@@ -49,14 +50,12 @@ a:hover {
 .btn-cont {
     z-index: 2;
     display:flex;
-    justify-content: right;
+    justify-content: center;
     width: 100%;
-    padding-right: 40px;
-    // margin-left:auto;
+    // padding-right: 40px;
     position: fixed;
     top:0;
     right:0;
-    // box-shadow: 0px 0px 30px 5px rgb(0, 0, 0) inset;
     background-color: rgba(27, 27, 27, 0.75);
 }
 
@@ -82,12 +81,28 @@ a:hover {
     // background-color: green;
 }
 
+.cont.is-mobile {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    // background-color: darkblue;
+}
+
 .left-col {
     display: flex;
     flex-flow:column;    
-   width: 50%;
-   min-width:300px;
-//    background-color: darkred;
+    width: 50%;
+    min-width:300px;
+//    background-color: pink;
+}
+
+.left-col.is-mobile {
+    display:flex;
+    justify-content: center;
+    min-width: 100vw;
+    height: 100vh;
+    // background-color: green;    
 }
 
 .left-col .poem-insert {
@@ -110,6 +125,16 @@ a:hover {
     // background-color: aqua;
 }
 
+.divider.is-mobile {
+    display:flex;
+    flex-direction: row;
+    flex-flow:row;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    // padding: 20px;
+}
+
 .arrow-up {
     height: 10px;
     width: 10px;
@@ -118,10 +143,17 @@ a:hover {
     display: inline-block;
 }
 
-.divider .arrow-body {
+.arrow-body {
     width: 1.5px;
-    min-height: 90vh;
+    min-width: 90vh;
     height: 100%;
+    background-color: #9c0d38;    
+}
+
+.arrow-body.is-mobile {
+    width: 80%;
+    min-width: 300px;
+    height: 1.5px;
     background-color: #9c0d38;    
 }
 

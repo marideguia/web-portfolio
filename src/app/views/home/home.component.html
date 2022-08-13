@@ -1,11 +1,12 @@
-<div class="cont">    
-    <div class="left-col">
-        <div class="left-img" title="Website creator"></div>
+<div class="cont" [ngClass]="{'is-mobile': isMobilePortrait}">    
+    <div class="left-col" [ngClass]="{'is-mobile': isMobilePortrait}">
+        <div class="left-img" title="Website creator"
+        [ngClass]="{'is-mobile': isMobilePortrait}"></div>
     </div>
 
-    <div class="divider">
+    <div class="divider" [ngClass]="{'is-mobile': isMobilePortrait}">
         <div class="arrow-up"></div>
-        <div class="arrow-body"></div>
+        <div class="arrow-body" [ngClass]="{'is-mobile': isMobilePortrait}"></div>
         <div class="arrow-down"></div>
     </div>
 
@@ -20,11 +21,11 @@
                 Lubbock, TX local who frequently indulges in graphic novels and web comics. 
                 Currently enthralled by web development and user experience design.</p>
             <p class="poem-insert">
-                lips to betray with<br>            
+                <!-- lips to betray with<br>            
                 thoughts to doubt ourselves<br>
                 & words to comfort each other<br>
-                <!-- & tears to brush away<br> -->
-                <br>
+                & tears to brush away<br>
+                <br> -->
                 with all this humanity<br>
                 who could blame us for believing<br>
                 we were the center of the universe? 
