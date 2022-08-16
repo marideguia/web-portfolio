@@ -1,7 +1,7 @@
 
 .right-col h1 {    
-    // margin-top: -5px;
-    font-size: 70px;
+    margin-top: -5px;
+    font-size: 48px;
     text-transform: uppercase;
     background-image: linear-gradient(
     35deg,
@@ -23,6 +23,10 @@
     -webkit-text-fill-color: transparent;
     animation: textclip 6s linear infinite;
     display: inline-block;
+}
+
+h1.is-mobile {
+  font-size: 48px;
 }
 
 @keyframes textclip {

@@ -2,14 +2,6 @@ table {
     margin-top: 30px;
 }
 
-.right-col > * {
-    width: 750px;
-    padding-bottom: 65px;
-    border-bottom: dotted;
-    border-width: 8px;
-    border-color:#9c0d38;
-}
-
 .right-col.is-mobile > * {
     width: 100%;
     padding-bottom: 65px;
@@ -34,7 +26,14 @@ table {
     padding-bottom: 65px;
     border-bottom: dotted;
     border-width: 8px;
-    border-color:#9c0d38;
+    border-color:
+    #9c0d38    
+    // #8377D1,
+    // #92DCE5,
+    // #F04A7C,
+    // #F17300,
+    // #F18F01
+    ;
 }
 
 .right-col > *:last-child {
@@ -58,3 +57,4 @@ table {
     background-size:cover;
     margin-top: 30px;
 }
+

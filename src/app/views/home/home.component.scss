@@ -3,37 +3,7 @@
 }
 
 .title.is-mobile h1{
-    font-size: 3.1em;
-}
-
-.title {    
-    text-transform: uppercase;
-    background-image: linear-gradient(
-    35deg,
-    #8377D1,
-    #92DCE5,
-    #F04A7C,
-    #F17300,
-    #F18F01,
-    #F04A7C,
-    #92DCE5,
-    #8377D1,
-    );
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #fff;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: textclip 6s linear infinite;
-    display: inline-block;
-}
-
-@keyframes textclip {
-  to {
-    background-position: 200% center;
-  }
+    font-size: 48px;
 }
 
 .left-col.is-mobile {
@@ -61,12 +31,8 @@
     background-image: url(../../../assets/website_author.PNG);
     background-size: cover;
     background-repeat: no-repeat; 
-    box-shadow: -50px 0px 60px 40px rgb(27,27,27) inset;
+    box-shadow: 0px 0px 60px 40px rgb(27,27,27) inset;
 }
-
-// .left-img:hover {
-//     transform: scale(1.05);
-// }
 
 .right-col {
     height: 100%;
@@ -82,15 +48,25 @@
     max-width: 750px;    
 }
 
+.desc-wrap {
+    padding: 5px;
+    background: linear-gradient(
+        35deg,
+        #8377D1,
+        #92DCE5,
+        #F04A7C,
+        #F17300,
+        #F18F01,
+    );
+}
+
 .description {
     margin-top: 40px;
     padding: 40px 0;
-    border-bottom: dotted 8px #9c0d38;
-    border-top: dotted 8px #9c0d38;
-
+    border-top: 8px dotted #9c0d38;
+    border-bottom: 8px dotted #9c0d38;    
 }
 
 .poem-insert {
-    margin-top: 40px;
-    
+    margin-top: 40px;    
 }

@@ -17,76 +17,85 @@
 
     <div class="right-col" [ngClass]="{'is-mobile': isMobilePortrait}">
         <div class="project">
-            <h1><a href="https://github.com/ShreyeshArangath/NeuralNetworkProject"
-                target="_blank"
-                rel="noreferrer noopener">Deep Learning: Vehicle Occupant Classification</a></h1>
+            <div class="title">
+                <h1><a href="https://github.com/ShreyeshArangath/NeuralNetworkProject"
+                    target="_blank"
+                    rel="noreferrer noopener">Deep Learning: Vehicle Occupant Classification</a></h1>
+            </div>
+            
             <p>Our research team built and trained a neural network model used to classify images of vehicle
                 occupants through interpretable and explainable deep-learning methods.</p>
             
-            <table [ngClass]="{'is-mobile': isMobilePortrait}">
-                <tr>
-                    <th>Architecture</th>
-                    <th>Optimizer</th>
-                    <th>Batch Size</th>
-                    <th>Epochs</th>
-                    <th>Avg Accuracy with Authors' Methods<br>(5 trials)</th>
-                    <th>Avg Accuracy After Optimization<br>(5 trials)</th>
-                </tr>
-                <tr>
-                    <td>ResNet50</td>
-                    <td>Adam</td>
-                    <td>64</td>
-                    <td>5+5</td>
-                    <td>.748</td>
-                    <td>.783</td>                    
-                </tr>
-                <tr>
-                    <td>DenseNet121</td>
-                    <td>Adam</td>
-                    <td>32</td>
-                    <td>5+5</td>
-                    <td>.710</td>
-                    <td>.752</td>                    
-                </tr>
-                <tr>
-                    <td>EfficientNetB0</td>
-                    <td>Adam</td>
-                    <td>32</td>
-                    <td>5+5</td>
-                    <td>.750</td>
-                    <td>.753</td>                    
-                </tr>
-                <tr>
-                    <td>EfficientNetB5</td>
-                    <td>Adam</td>
-                    <td>32</td>
-                    <td>5+5</td>
-                    <td>.815</td>
-                    <td>.853</td>                    
-                </tr>
-                <tr>
-                    <td>EfficientNetB7</td>
-                    <td>Adam</td>
-                    <td>32</td>
-                    <td>5+5</td>
-                    <td>.814</td>
-                    <td>.842</td>                    
-                </tr>
-                <tr>
-                    <td>VGG</td>
-                    <td>Adam</td>
-                    <td>64</td>
-                    <td>5+5</td>
-                    <td>N/A</td>
-                    <td>.696</td>                    
-                </tr>         
-            </table>
+            <div class="wrap-center">
+                <table [ngClass]="{'is-mobile': isMobilePortrait}">
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <th>Architecture</th>
+                        <!-- <th>Optimizer</th> -->
+                        <th>Batch Size</th>                    
+                        <!-- <th>Epochs</th> -->                    
+                        <th>Initial Accuracy</th>
+                        <th>Avg Accuracy<br>After Optimizations<br>(5 trials)</th>
+                    </tr>
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <td>ResNet50</td>
+                        <!-- <td>Adam</td> -->
+                        <td>64</td>
+                        <!-- <td>5+5</td> -->
+                        <td>.748</td>
+                        <td>.783</td>                    
+                    </tr>
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <td>DenseNet121</td>
+                        <!-- <td>Adam</td> -->
+                        <td>32</td>
+                        <!-- <td>5+5</td> -->
+                        <td>.710</td>
+                        <td>.752</td>                    
+                    </tr>
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <td>EfficientNetB0</td>
+                        <!-- <td>Adam</td> -->
+                        <td>32</td>
+                        <!-- <td>5+5</td> -->
+                        <td>.750</td>
+                        <td>.753</td>                    
+                    </tr>
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <td>EfficientNetB5</td>
+                        <!-- <td>Adam</td> -->
+                        <td>32</td>
+                        <!-- <td>5+5</td> -->
+                        <td>.815</td>
+                        <td>.853</td>                    
+                    </tr>
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <td>EfficientNetB7</td>
+                        <!-- <td>Adam</td> -->
+                        <td>32</td>
+                        <!-- <td>5+5</td> -->
+                        <td>.814</td>
+                        <td>.842</td>                    
+                    </tr>
+                    <tr [ngClass]="{'is-mobile': isMobilePortrait}">
+                        <td>VGG</td>
+                        <!-- <td>Adam</td> -->
+                        <td>64</td>
+                        <!-- <td>5+5</td> -->
+                        <td>N/A</td>
+                        <td>.696</td>                    
+                    </tr>         
+                </table>
+            </div>
+            
         </div>
 
         <div class="project">
-            <h1><a href="https://github.com/marideguia/ghost-post"
-                target="_blank"
-                rel="noreferrer noopener">GhostPost</a></h1>
+            <div class="title">
+                <h1><a href="https://github.com/marideguia/ghost-post"
+                    target="_blank"
+                    rel="noreferrer noopener">GhostPost</a></h1>
+            </div>
+            
             <p>GhostPost is a learning engagement tool currently under construction. Our goal is to provide a responsive
                 web application that allows audiences and lecturers 
                 to communicate anonymously with each other in real-time.</p>            
@@ -94,9 +103,12 @@
         </div>       
 
         <div class="project">
-            <h1><a href="https://github.com/marideguia/HackWesTX"
-                target="_blank"
-                rel="noreferrer noopener">SpottID</a></h1>
+            <div class="title">
+                <h1><a href="https://github.com/marideguia/HackWesTX"
+                    target="_blank"
+                    rel="noreferrer noopener">SpottID</a></h1>
+            </div>
+            
             <p>In this project, our team designed interfaces for a social media and e-commerce platform
             meant to spotlight works created by marginalized artists.</p>            
             <div class="p-img"></div>
