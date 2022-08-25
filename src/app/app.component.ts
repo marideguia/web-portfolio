@@ -8,7 +8,6 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 })
 export class AppComponent {
   title = 'Mariclaire De Guia';  
-
   isMobilePortrait=false;
   
   constructor(private responsive: BreakpointObserver) { 
