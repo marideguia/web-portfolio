@@ -22,14 +22,21 @@ li {
     font-weight: bold;
 }
 
+hr {
+    margin: 0;
+    max-width: 750px;
+    border-top: 8px dotted #9c0d38;
+    border-style: dotted none none;
+}
+
 table {
     width: 100%;
+    margin-top: 30px;
 }
 
 table, th, td {
     font-size: 16px;
     padding: 3px 10px;
-
     border: 1px solid #9c0d38;
     border-collapse: collapse;
 }
@@ -117,13 +124,15 @@ a:hover {
     flex-flow:column;    
     width: 50%;
     min-width:450px;
-//    background-color: pink;
 }
 
 .left-col.is-mobile {
+    display: flex;
+    flex-flow:column;    
+    width: 50%;
+    min-width:450px;
     justify-content: center;
     min-width: 100vw;
-    // background-color: green;    
 }
 
 .left-col .poem-insert {
@@ -195,11 +204,9 @@ a:hover {
 .right-col {
     padding: 100px 50px;
     width: 100%;
-    // background-color: blue;
 }
 
 .right-col.is-mobile{
-    // use padding: to overwrite above padding
     padding: 0 0 0 10vw;
     width: 80vw;
 }
@@ -242,7 +249,3 @@ a:hover {
 .poem-insert {
     font-style: italic;
 }
-
-
-
-
