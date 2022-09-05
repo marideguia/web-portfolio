@@ -1,6 +1,7 @@
 .title {
     margin-bottom:20px;
 }
+
 .title h1 {
     font-size: 70px;
 }
@@ -10,8 +11,8 @@
 }
 
 .left-col.is-mobile {
-    background-color:green;
     width: 100vw;
+    height: 100vh;
 }
 
 img {
@@ -21,8 +22,7 @@ img {
 .left-img {
     margin-top: 50px;
     width: 100%;
-    height:100%;
-    min-width: 450px;
+    height: 100%;
     background-image: url(../../../assets/Profile.jpg);
     background-size: cover;
     background-repeat: no-repeat; 
@@ -30,11 +30,6 @@ img {
 }
 
 .left-img.is-mobile {
-    width: 100%;
-    height: 100%;
-    background-image: url(../../../assets/ProfP2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat; 
     box-shadow: 0px 0px 60px 40px rgb(27,27,27) inset;
 }
 
@@ -50,8 +45,6 @@ img {
 .right-col p {
     max-width: 750px;
     padding: 20px 0;
-    // margin-top: 40px;
- 
 }
 
 .desc-wrap {

@@ -1,12 +1,5 @@
 <div class="cont" [ngClass]="{'is-mobile': isMobilePortrait}">
     <div class="left-col" [ngClass]="{'is-mobile': isMobilePortrait}">
-        <!-- <div class="poem-insert" [ngClass]="{'is-mobile': isMobilePortrait}">
-            a hail of tones<br>
-            and a current of hues<br>
-            we’ll look up toward the rainbow calm<br>
-            and know that such a sight<br>
-            was our watercolor storm<br>
-        </div> -->
     </div>
 
     <div class="divider" [ngClass]="{'is-mobile': isMobilePortrait}">
@@ -16,7 +9,7 @@
     </div>
 
     <div class="right-col" [ngClass]="{'is-mobile': isMobilePortrait}">
-        <div class="project">
+        <div class="project" id="first" [ngClass]="{'is-mobile': isMobilePortrait}">
             <div class="title">
                 <h1><a href="https://github.com/ShreyeshArangath/NeuralNetworkProject"
                     target="_blank"
@@ -91,9 +84,17 @@
             
         </div>
 
-        <hr>
+        <hr [ngClass]="{'is-mobile': isMobilePortrait}">
+        
+    
 
-        <div class="project">
+        <div class="proj-divider" id='sub' [ngClass]="{'is-mobile': isMobilePortrait}">
+            <div class="arrow-up"></div>
+            <div class="arrow-body" [ngClass]="{'is-mobile': isMobilePortrait}"></div>
+            <div class="arrow-down"></div>
+        </div>
+
+        <div class="project" [ngClass]="{'is-mobile': isMobilePortrait}">
             <div class="title">
                 <h1><a href="https://github.com/marideguia/ghost-post"
                     target="_blank"
@@ -107,9 +108,15 @@
             <div class="gif"></div>
         </div>
         
-        <hr>
+        <hr [ngClass]="{'is-mobile': isMobilePortrait}">
 
-        <div class="project">
+        <div class="proj-divider" id='sub' [ngClass]="{'is-mobile': isMobilePortrait}">
+            <div class="arrow-up"></div>
+            <div class="arrow-body" [ngClass]="{'is-mobile': isMobilePortrait}"></div>
+            <div class="arrow-down"></div>
+        </div>
+
+        <div class="project" [ngClass]="{'is-mobile': isMobilePortrait}">
             <div class="title">
                 <h1><a href="https://github.com/marideguia/HackWesTX"
                     target="_blank"
