@@ -2,23 +2,16 @@ hr.is-mobile {
     display: none;
 }
 
-.proj-divider {
+#top.is-mobile {
+    margin-top: 60px;
+}
+
+#sub {
     display: none;
 }
 
-.proj-divider.is-mobile {
+#sub.is-mobile {
     display: flex;
-    flex-direction: column;
-    flex-flow:column;
-    align-items: center;  
-    margin: 10px 0 0 0;
-    padding: 50px 0 10px 0;
-
-    flex-flow:row;
-    width: 100%;
-    margin: 5px 0 30px 30px;
-    padding: 0;
-
 }
 
 .right-col.is-mobile{
@@ -30,15 +23,15 @@ hr.is-mobile {
     margin: 5px 0 30px 30px;
 }
 
-.project.is-mobile {
-    width: 90vw;
-    padding: 0 0 20px 10vw;
-    margin-bottom: 20px;
-}
-
 .project {
     width: 750px;
     padding: 10px 0 40px 0; 
+}
+
+.project.is-mobile {
+    width: 80vw;
+    padding: 0 0 20px 10vw;
+    margin-bottom: 20px;
 }
 
 #first {

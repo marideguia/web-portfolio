@@ -11,6 +11,7 @@ body {
     width: 100%;
     height: 100%;
     font-size: 18px;
+    // text-align: justify;
 }
 
 ul {
@@ -27,7 +28,6 @@ li {
 hr {
     margin: 0;
     align-self: left;
-    // width: 90%;
     max-width: 750px;
     border-top: 8px dotted #9c0d38;
     border-style: dotted none none;
@@ -45,11 +45,6 @@ table, th, td {
     border-collapse: collapse;
 }
 
-tr.is-mobile > * {
-    font-size: 14px;
-    padding: 3px;
-}
-
 th {
     text-transform: capitalize;
     padding:3px 5px;
@@ -60,11 +55,15 @@ td {
     padding: 5px;
 }
 
+tr.is-mobile > * {
+    font-size: 12px;
+    padding: 3px;
+}
+
 a {
     font-style: italic;
     transition: all .3s ease-in-out;
     color:#f04a7c;
-    // text-decoration: none;
 }
 
 a:hover {
@@ -73,13 +72,13 @@ a:hover {
 }
 
 .navbar {
-    z-index: 2;
-    position: fixed;
-    top:0;
-    right:0;
     display:flex;
-    justify-content: right;
     width: 100vw;
+    position: fixed;
+    z-index: 2;    
+    top:0;
+    right:0;    
+    justify-content: right;    
     padding-right: 2vw;    
     background-color: rgba(27, 27, 27, 0.75);
 }
@@ -122,25 +121,23 @@ a:hover {
 }
 
 .left-col.is-mobile {
-    min-width: unset;
-    min-height: 20px;
-    // margin: 30px 0;
+    min-width: 100vw;
 }
 
 .divider {
     display: flex;
     flex-direction: column;
-    flex-flow:column;
     align-items: center;  
     margin: 10px 0 0 0;
     padding: 50px 0 10px 0;
 }
 
 .divider.is-mobile {
-    flex-flow:row;
-    width: 100%;
-    margin: 35px 0 20px 30px;
-    padding: 0;
+    flex-direction:row;
+    width: 85%;   
+    margin: 35px auto 30px auto;
+    padding: 0px;
+    justify-content: center;
 }
 
 .arrow-up {
@@ -159,7 +156,7 @@ a:hover {
 }
 
 .arrow-body.is-mobile {
-    width: 80%;
+    width: 100%;
     min-height: 1.5px;
     background-color: #9c0d38;    
 }
