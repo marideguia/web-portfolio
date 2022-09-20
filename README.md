@@ -4,7 +4,8 @@ Built to display previous works and personal projects.
 
 ## Technologies used
 
-- JavaScript
+- Figma
+- TypeScript
 - HTML
 - CSS
 - Angular
